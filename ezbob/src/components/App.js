@@ -3,11 +3,17 @@ import '../styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello world!
-      </header>
+    <>
+    <div className="circle center" 
+      onAnimationIteration={() => {console.log('blinked')}}
+    >
+      <div className="insideCircle center" >
+        
+
+      </div>
+
     </div>
+    </>
   );
 }
 
