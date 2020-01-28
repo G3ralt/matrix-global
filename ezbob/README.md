@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#CSS
+em - relative to font-size of parent /current font-size/
+rem - relative to font-size of root element
+px - pixels
+% - percent of something
+vh/vw - relative to 1% of the viewport height/width
+display:none - element doesn't appear on page, no space is allocated for it
+display:hidden - element appears on page but is not visible
+mixins - styles that can be reused through the stylesheet
 
-## Available Scripts
+$JS
+postMessage - communication between the window and an iframe or pop-up, not blocked by cors
+forEach - executes a function on all elements
+map - same like for each but doesn`t change the original array; returns a new array
+filter - filters an array based on a predicate; returns a new array
+reduce/reduceRight - reduces an array to a single value
+every - checks if all elements pass a test
+some - check if some elements pass a test
+indexOf/lastIndexOf - finds index of element
+find - finds the first element that passes a test
+findIndex - same as above but returns the index
+name - Dan, age - 40;
 
-In the project directory, you can run:
+#React
+HOC - component(function) that takes another component as an argument; wrapper 
+Hooks - it lets usage of state and lifecycle methods in functional components
+Context API - used to pass data through context object instead of props with the component chain
+componentDidMount - fires after first render; can be hooked with useEffect()
+componentDidUpdate - fires after every render; can be hooked with useEffect()
+componentWillUnmount - fires before removal of component; can be hooked with useEffect()
+shouldComponentUpdate - decides if render should be triggered based on state and props; it can be somewhat hooked with React.memo
+controlled/uncontrolled - controlled components use the state of the component as state for the element; uncontrolled don`t use state of the component, but might use references
+React.memo - HOC for functional components; can be used instead of shouldComponentUpdate
 
-### `npm start`
+#Authentication
+1. With username/password protocol. After authenticating the information, the server should send a token that is attached to every request to secure resources. Also, multi-factor authentication is possible.
+2. Cross-Origin Resource Sharing is a request to a resource from different origin. A solution is adding an Access-Control-Allow-Origin header to responses.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#Opinions
+1. REDUX
+2. Pro - OOP features, con - complexity/time to learn
+3. I have used REST extensively and prefer it because I'm used to it, but I don't have problems with GraphQL.
