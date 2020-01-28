@@ -1,10 +1,18 @@
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .circle {
   height: 250px;
   width: 250px;
   background-color: red;
   border-radius: 50%;
   display: inline-block;
-  /* animation: blink 1s linear infinite; */
+  animation: blink 1s linear infinite;
+  @include center;
 }
 
 .insideCircle {
@@ -14,9 +22,10 @@
   border-radius: 50%;
   display: block;
   animation: show 1s linear infinite;
+  @include center;
 }
 
-.center {
+@mixin center {
   position: absolute;
   top: 50%;
   left: 50%;

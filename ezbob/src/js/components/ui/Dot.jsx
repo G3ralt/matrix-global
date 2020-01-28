@@ -5,8 +5,8 @@ const Dot = () => {
     return (
         <>
             <NavLink to="/react-task">Other comps</NavLink>
-            <div className="circle center" >
-                <div className="insideCircle center" >
+            <div className="circle" >
+                <div className="insideCircle" >
                 </div>
             </div>
         </>
